@@ -13,42 +13,13 @@
 <h1>Vivekanand Shiksha Niketan</h1>
 <h2>Junior High School</h2>
 <p>Teacher Portal</p>
-
-<!-- STEP 1: Password -->
-<div id="passwordStep">
 <div class="input-box">
 <i class="fa-solid fa-lock"></i>
 <input type="password" id="password" placeholder="Enter Password">
 </div>
-<button onclick="checkPassword()">LOGIN</button>
-</div>
-
-<!-- STEP 2: Phone Number -->
-<div id="phoneStep" style="display:none;">
-<div class="input-box">
-<i class="fa-solid fa-phone"></i>
-<input type="tel" id="phoneNumber" placeholder="Enter Registered Mobile Number">
-</div>
-<button onclick="sendOtp()">SEND OTP</button>
-</div>
-
-<!-- STEP 3: OTP -->
-<div id="otpStep" style="display:none;">
-<div class="input-box">
-<i class="fa-solid fa-key"></i>
-<input type="text" id="otpCode" placeholder="Enter OTP">
-</div>
-<button onclick="verifyOtp()">VERIFY & LOGIN</button>
-</div>
-
-<div id="recaptcha-container"></div>
-
+<button onclick="loginTeacher()">LOGIN</button>
 <p id="msg"></p>
 </div>
-
-<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
-<script src="firebase.js"></script>
 <script src="teacher.js"></script>
 </body>
 </html>
