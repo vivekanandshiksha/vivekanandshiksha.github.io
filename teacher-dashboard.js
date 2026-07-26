@@ -27,6 +27,8 @@ let gallery    = [];
 
 document.addEventListener("DOMContentLoaded", function () {
 
+  document.body.classList.add("is-loaded");
+
   // Live listeners — table/cards refresh automatically whenever data changes
   db.ref("students").on("value", function (snap) {
     const val = snap.val() || {};
